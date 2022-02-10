@@ -5,6 +5,8 @@ CRUD created for a Technical Test for Tensolite.
 The CRUD is developed using React for the Fron-end, SQL Server for the Database and Node for the API, using Node "mssql" package.
 
 ----------------------------------------------------------------------------------------------------------------------------------
+# POSTMAN API DOCUMENTATION
+https://documenter.getpostman.com/view/16840698/UVeMGiUU
 
 # SET UP DATABASE
 Inside the "Database Script" folder, there is the .sql file script to build the database, including Schemas and Data

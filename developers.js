@@ -74,7 +74,6 @@ const deleteDeveloper = async(id) => {
 
 module.exports = {
   getDevelopers,
-  getDeveloperFromID,
   insertDeveloper,
   editDeveloper,
   deleteDeveloper

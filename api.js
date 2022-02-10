@@ -31,12 +31,12 @@ router.route('/developers').get((req, res) => {
   })
 })
 
-//Ruta que devuelve un developer por su ID
-router.route('/developers/:id').get((req, res) => {
-  developers.getDeveloperFromID(req.params.id).then(result => {
-    res.json(result)
-  })
-})
+// //Ruta que devuelve un developer por su ID - IMPLEMENTADO PERO NO UTILIZADO
+// router.route('/developers/:id').get((req, res) => {
+//   developers.getDeveloperFromID(req.params.id).then(result => {
+//     res.json(result)
+//   })
+// })
 
 //Ruta para agregar un nuevo developer
 router.route('/developers/add').post((req, res) => {
@@ -57,7 +57,7 @@ router.route('/developers/edit').post((req, res) => {
 //Ruta para eliminar un developer
 router.route('/developers/delete/:id').post((req, res) => {
   developers.deleteDeveloper(req.params.id).then(result => {
-    res.json(result)
+    res.json('Desarrollador eliminado con éxito')
   })
 })
 
