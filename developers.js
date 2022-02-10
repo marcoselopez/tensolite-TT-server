@@ -12,18 +12,18 @@ const getDevelopers = async() => {
   }
 }
 
-//Obtener un developer por ID
-const getDeveloperFromID = async(id) => {
-  try {
-    let pool = await sql.connect(config);
-    let developers = await pool.request()
-    .input('input_parameter', sql.Int, id)
-    .execute("SP_L_DEVELOPERXID_01");
-    return developers.recordsets;
-  } catch (error) {
-    console.log(error);
-  }
-}
+//Obtener un developer por ID - IMPLEMENTADO PERO NO UTILIZADO
+// const getDeveloperFromID = async(id) => {
+//   try {
+//     let pool = await sql.connect(config);
+//     let developers = await pool.request()
+//     .input('input_parameter', sql.Int, id)
+//     .execute("SP_L_DEVELOPERXID_01");
+//     return developers.recordsets;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
 //Agregar un nuevo developer
 const insertDeveloper = async(developer) => {
