@@ -6,6 +6,9 @@ The CRUD is developed using React for the Fron-end, SQL Server for the Database 
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
+# SET UP DATABASE
+Inside the "Database Script" folder, there is the .sql file script to build the database, including Schemas and Data
+
 # .ENV Configuration
 ---------------------
 To set up the API, you need to configure the .env file for the connection to the database using the following parameters:
